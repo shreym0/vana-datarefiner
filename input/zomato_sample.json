@@ -1,0 +1,36 @@
+{
+    "type": "ZOMATO",
+    "claimedDate": "2025-08-05T09:20:00Z",
+    "witnesses": "https://example.com/zomato-proof",
+    "walletAddress": "0xefgh3456ijkl7890mnop1234qrst5678abcd9012",
+    "AccountUsername": "foodie_sam",
+    "securedSharedData": {
+        "userid": "zomato_77231",
+        "orders": [
+            {
+                "orderId": "ZM123456",
+                "totalCost": "45.30 USD",
+                "dishString": "Paneer Butter Masala, Garlic Naan, Mango Lassi",
+                "deliveryDetails": {
+                    "deliveryAddress": "101 Sunset Blvd, Los Angeles, CA",
+                    "deliveryStatus": "Delivered",
+                    "deliveryMessage": "Leave at doorstep",
+                    "deliveryLabel": "Dinner"
+                },
+                "restaurantURL": "https://zomato.com/restaurant/awesome-indian"
+            },
+            {
+                "orderId": "ZM123789",
+                "totalCost": "18.75 USD",
+                "dishString": "Pepperoni Pizza, Coke",
+                "deliveryDetails": {
+                    "deliveryAddress": "101 Sunset Blvd, Los Angeles, CA",
+                    "deliveryStatus": "Delivered",
+                    "deliveryMessage": "Ring doorbell",
+                    "deliveryLabel": "Lunch"
+                },
+                "restaurantURL": "https://zomato.com/restaurant/pizza-heaven"
+            }
+        ]
+    }
+}
