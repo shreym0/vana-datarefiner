@@ -20,10 +20,24 @@ class SecuredSharedData(BaseModel):
     userid: str
     orders: List[ZomatoOrder]
 
+class ZomatoContribution(BaseModel):
+    type: str
+    claimedDate: str  # We'll ignore this in storage but keep for validation
+    witnesses: str
+    walletAddress: str  # We'll ignore this in storage but keep for validation
+    AccountUsername: str
+    securedSharedData: SecuredSharedData
+
+class ZomatoInputData(BaseModel):
+    walletAddress: str  # We'll ignore this in storage but keep for validation
+    claimDate: str  # We'll ignore this in storage but keep for validation
+    contributions: List[ZomatoContribution]
+
+# Keep the old ZomatoData for backward compatibility
 class ZomatoData(BaseModel):
     type: str
-    claimedDate: str
+    claimedDate: str  # We'll ignore this in storage but keep for validation
     witnesses: str
-    walletAddress: str
+    walletAddress: str  # We'll ignore this in storage but keep for validation
     AccountUsername: str
     securedSharedData: SecuredSharedData

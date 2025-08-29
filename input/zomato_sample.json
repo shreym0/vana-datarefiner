@@ -1,36 +1,150 @@
 {
-    "type": "ZOMATO",
-    "claimedDate": "2025-08-05T09:20:00Z",
-    "witnesses": "https://example.com/zomato-proof",
-    "walletAddress": "0xefgh3456ijkl7890mnop1234qrst5678abcd9012",
-    "AccountUsername": "foodie_sam",
-    "securedSharedData": {
-        "userid": "zomato_77231",
-        "orders": [
-            {
-                "orderId": "ZM123456",
-                "totalCost": "45.30 USD",
-                "dishString": "Paneer Butter Masala, Garlic Naan, Mango Lassi",
-                "deliveryDetails": {
-                    "deliveryAddress": "101 Sunset Blvd, Los Angeles, CA",
-                    "deliveryStatus": "Delivered",
-                    "deliveryMessage": "Leave at doorstep",
-                    "deliveryLabel": "Dinner"
-                },
-                "restaurantURL": "https://zomato.com/restaurant/awesome-indian"
-            },
-            {
-                "orderId": "ZM123789",
-                "totalCost": "18.75 USD",
-                "dishString": "Pepperoni Pizza, Coke",
-                "deliveryDetails": {
-                    "deliveryAddress": "101 Sunset Blvd, Los Angeles, CA",
-                    "deliveryStatus": "Delivered",
-                    "deliveryMessage": "Ring doorbell",
-                    "deliveryLabel": "Lunch"
-                },
-                "restaurantURL": "https://zomato.com/restaurant/pizza-heaven"
+    "walletAddress": "0x68Ed3C600Fba4F92c0fdB0763C00a4068a585726",
+    "claimDate": "2025-08-05T09:20:00Z",
+    "contributions": [
+        {
+            "type": "ZOMATO",
+            "claimedDate": "2025-08-05T09:20:00Z",
+            "witnesses": "https://example.com/zomato-proof",
+            "walletAddress": "0x68Ed3C600Fba4F92c0fdB0763C00a4068a585726",
+            "AccountUsername": "foodie_sam",
+            "securedSharedData": {
+                "userid": "zomato_77231",
+                "orders": [
+                    {
+                        "orderId": "ZM123456",
+                        "totalCost": "45.30 USD",
+                        "dishString": "Paneer Butter Masala, Garlic Naan, Mango Lassi",
+                        "deliveryDetails": {
+                            "deliveryAddress": "101 Sunset Blvd, Los Angeles, CA",
+                            "deliveryStatus": "Delivered",
+                            "deliveryMessage": "Leave at doorstep",
+                            "deliveryLabel": "Dinner"
+                        },
+                        "restaurantURL": "https://zomato.com/restaurant/awesome-indian"
+                    },
+                    {
+                        "orderId": "ZM123789",
+                        "totalCost": "18.75 USD",
+                        "dishString": "Pepperoni Pizza, Coke",
+                        "deliveryDetails": {
+                            "deliveryAddress": "101 Sunset Blvd, Los Angeles, CA",
+                            "deliveryStatus": "Delivered",
+                            "deliveryMessage": "Ring doorbell",
+                            "deliveryLabel": "Lunch"
+                        },
+                        "restaurantURL": "https://zomato.com/restaurant/pizza-heaven"
+                    },
+                    {
+                        "orderId": "ZM124001",
+                        "totalCost": "32.40 USD",
+                        "dishString": "Chicken Tikka Masala, Basmati Rice, Tandoori Chicken",
+                        "deliveryDetails": {
+                            "deliveryAddress": "250 Broadway, New York, NY",
+                            "deliveryStatus": "Delivered",
+                            "deliveryMessage": "Call when arrived",
+                            "deliveryLabel": "Dinner"
+                        },
+                        "restaurantURL": "https://zomato.com/restaurant/spice-palace"
+                    },
+                    {
+                        "orderId": "ZM124502",
+                        "totalCost": "12.99 USD",
+                        "dishString": "California Roll, Miso Soup",
+                        "deliveryDetails": {
+                            "deliveryAddress": "45 Market St, San Francisco, CA",
+                            "deliveryStatus": "Delivered",
+                            "deliveryMessage": "Leave with concierge",
+                            "deliveryLabel": "Lunch"
+                        },
+                        "restaurantURL": "https://zomato.com/restaurant/tokyo-sushi"
+                    },
+                    {
+                        "orderId": "ZM125103",
+                        "totalCost": "28.85 USD",
+                        "dishString": "Beef Tacos, Guacamole, Churros, Corona Beer",
+                        "deliveryDetails": {
+                            "deliveryAddress": "789 Ocean Drive, Miami, FL",
+                            "deliveryStatus": "Delivered",
+                            "deliveryMessage": "Ring apartment 4B",
+                            "deliveryLabel": "Dinner"
+                        },
+                        "restaurantURL": "https://zomato.com/restaurant/el-mariachi"
+                    },
+                    {
+                        "orderId": "ZM125704",
+                        "totalCost": "16.50 USD",
+                        "dishString": "Caesar Salad, Grilled Chicken, Iced Tea",
+                        "deliveryDetails": {
+                            "deliveryAddress": "1200 Pennsylvania Ave, Washington, DC",
+                            "deliveryStatus": "Delivered",
+                            "deliveryMessage": "Meet at lobby",
+                            "deliveryLabel": "Lunch"
+                        },
+                        "restaurantURL": "https://zomato.com/restaurant/healthy-bites"
+                    },
+                    {
+                        "orderId": "ZM126305",
+                        "totalCost": "42.75 USD",
+                        "dishString": "Lobster Thermidor, Asparagus, Champagne",
+                        "deliveryDetails": {
+                            "deliveryAddress": "500 Fifth Avenue, New York, NY",
+                            "deliveryStatus": "Delivered",
+                            "deliveryMessage": "Special occasion - handle with care",
+                            "deliveryLabel": "Anniversary Dinner"
+                        },
+                        "restaurantURL": "https://zomato.com/restaurant/fine-dining-elite"
+                    },
+                    {
+                        "orderId": "ZM126906",
+                        "totalCost": "9.99 USD",
+                        "dishString": "Acai Bowl, Fresh Berries, Granola",
+                        "deliveryDetails": {
+                            "deliveryAddress": "333 Beach Blvd, Santa Monica, CA",
+                            "deliveryStatus": "Delivered",
+                            "deliveryMessage": "Leave at door",
+                            "deliveryLabel": "Breakfast"
+                        },
+                        "restaurantURL": "https://zomato.com/restaurant/sunrise-smoothies"
+                    },
+                    {
+                        "orderId": "ZM127507",
+                        "totalCost": "35.20 USD",
+                        "dishString": "Margherita Pizza, Antipasto Platter, Tiramisu, Chianti Wine",
+                        "deliveryDetails": {
+                            "deliveryAddress": "888 Little Italy, Boston, MA",
+                            "deliveryStatus": "Delivered",
+                            "deliveryMessage": "Surprise delivery - don't mention sender",
+                            "deliveryLabel": "Date Night"
+                        },
+                        "restaurantURL": "https://zomato.com/restaurant/nonna-marias"
+                    },
+                    {
+                        "orderId": "ZM128108",
+                        "totalCost": "21.60 USD",
+                        "dishString": "Pad Thai, Spring Rolls, Thai Iced Tea",
+                        "deliveryDetails": {
+                            "deliveryAddress": "1010 University Ave, Austin, TX",
+                            "deliveryStatus": "Delivered",
+                            "deliveryMessage": "Student discount applied",
+                            "deliveryLabel": "Study Session"
+                        },
+                        "restaurantURL": "https://zomato.com/restaurant/bangkok-express"
+                    },
+                    {
+                        "orderId": "ZM128709",
+                        "totalCost": "52.30 USD",
+                        "dishString": "Wagyu Burger, Truffle Fries, Craft Beer Flight",
+                        "deliveryDetails": {
+                            "deliveryAddress": "777 Downtown Plaza, Seattle, WA",
+                            "deliveryStatus": "Delivered",
+                            "deliveryMessage": "Corporate event - bill to company",
+                            "deliveryLabel": "Business Lunch"
+                        },
+                        "restaurantURL": "https://zomato.com/restaurant/gourmet-burger-co"
+                    }
+                ]
             }
-        ]
-    }
+        }
+    ]
 }

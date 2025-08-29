@@ -12,9 +12,7 @@ class ZomatoAccount(Base):
     
     account_id = Column(Integer, primary_key=True, autoincrement=True)
     data_type = Column(String, nullable=False)  # "ZOMATO"
-    claimed_date = Column(DateTime, nullable=False)
     witnesses = Column(String, nullable=False)
-    wallet_address = Column(String, nullable=False)
     account_username = Column(String, nullable=False)
     user_id = Column(String, nullable=False)  # Zomato user ID
     created_at = Column(DateTime, nullable=False, default=datetime.utcnow)
