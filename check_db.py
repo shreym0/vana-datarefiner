@@ -1,19 +1,48 @@
+#!/usr/bin/env python3
+
 import sqlite3
+import json
 
-conn = sqlite3.connect('output/db.libsql')
+def check_database():
+    db_path = "output/db.libsql"
+    
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        # Get all tables
+        cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+        tables = cursor.fetchall()
+        
+        print("=== DATABASE TABLES ===")
+        for table in tables:
+            table_name = table[0]
+            print(f"\nTable: {table_name}")
+            
+            # Get table schema
+            cursor.execute(f"PRAGMA table_info({table_name});")
+            columns = cursor.fetchall()
+            print("Columns:")
+            for col in columns:
+                print(f"  - {col[1]} ({col[2]})")
+            
+            # Get row count
+            cursor.execute(f"SELECT COUNT(*) FROM {table_name};")
+            count = cursor.fetchone()[0]
+            print(f"Row count: {count}")
+            
+            # Show some sample data if exists
+            if count > 0:
+                cursor.execute(f"SELECT * FROM {table_name} LIMIT 5;")
+                rows = cursor.fetchall()
+                print("Sample data:")
+                for row in rows:
+                    print(f"  {row}")
+        
+        conn.close()
+        
+    except Exception as e:
+        print(f"Error reading database: {e}")
 
-print("Tables:")
-for table in conn.execute("SELECT name FROM sqlite_master WHERE type='table'").fetchall():
-    print(f"  {table[0]}")
-
-print("\nZomato Accounts:")
-for row in conn.execute("SELECT * FROM zomato_accounts").fetchall():
-    print(f"  {row}")
-
-print("\nZomato Orders (first 3):")
-for row in conn.execute("SELECT order_id, total_cost, dish_string, delivery_label FROM zomato_orders LIMIT 3").fetchall():
-    print(f"  {row}")
-
-print(f"\nTotal Orders: {conn.execute('SELECT COUNT(*) FROM zomato_orders').fetchone()[0]}")
-
-conn.close()
+if __name__ == "__main__":
+    check_database()
