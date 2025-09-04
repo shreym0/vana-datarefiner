@@ -1,0 +1,131 @@
+{
+    "walletAddress": "0x1234567890abcdef1234567890abcdef12345678",
+    "claimDate": "2025-09-03T10:00:00Z",
+    "contributions": [
+        {
+            "type": "ZOMATO",
+            "claimedDate": "2025-09-03T10:00:00Z",
+            "witnesses": "witness1,witness2",
+            "walletAddress": "0x1234567890abcdef1234567890abcdef12345678",
+            "AccountUsername": "zomato_user123",
+            "securedSharedData": {
+                "userid": "zomato_12345",
+                "orders": [
+                    {
+                        "orderId": "ORD001",
+                        "totalCost": "25.99",
+                        "dishString": "Chicken Biryani, Raita",
+                        "deliveryDetails": {
+                            "deliveryAddress": "123 Main St, City",
+                            "deliveryStatus": "1",
+                            "deliveryMessage": "Delivered successfully",
+                            "deliveryLabel": "Delivered"
+                        },
+                        "restaurantURL": "https://zomato.com/restaurant/123"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "UBER",
+            "claimedDate": "2025-09-03T10:00:00Z",
+            "witnesses": "witness3,witness4",
+            "walletAddress": "0x1234567890abcdef1234567890abcdef12345678",
+            "AccountUsername": "uber_user456",
+            "securedSharedData": {
+                "trips": [
+                    {
+                        "beginTripTime": "2025-09-01T14:30:00Z",
+                        "dropoffTime": "2025-09-01T15:15:00Z",
+                        "pickupAddress": "Airport Terminal 1",
+                        "dropoffAddress": "Downtown Hotel",
+                        "fare": "45.50",
+                        "vehicleType": "UberX"
+                    }
+                ],
+                "userid": "uber_67890",
+                "username": "john_doe_uber"
+            }
+        },
+        {
+            "type": "SPOTIFY",
+            "claimedDate": "2025-09-03T10:00:00Z",
+            "witnesses": "witness5,witness6",
+            "walletAddress": "0x1234567890abcdef1234567890abcdef12345678",
+            "AccountUsername": "spotify_user789",
+            "securedSharedData": {
+                "username": "music_lover_123",
+                "userPlaylists": [
+                    {
+                        "playlistId": "playlist_001",
+                        "playlistName": "My Favorites",
+                        "playlistOwner": "music_lover_123",
+                        "tracks": [
+                            {
+                                "trackName": "Bohemian Rhapsody",
+                                "trackId": "track_001"
+                            },
+                            {
+                                "trackName": "Imagine",
+                                "trackId": "track_002"
+                            }
+                        ]
+                    }
+                ],
+                "recentlyPlayed": [
+                    {
+                        "trackName": "Stairway to Heaven",
+                        "trackId": "track_003"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "NETFLIX",
+            "claimedDate": "2025-09-03T10:00:00Z",
+            "witnesses": "witness7,witness8",
+            "walletAddress": "0x1234567890abcdef1234567890abcdef12345678",
+            "AccountUsername": "netflix_user101",
+            "securedSharedData": {
+                "profileName": "Movie Buff",
+                "favorites": [
+                    "The Witcher",
+                    "Stranger Things",
+                    "Breaking Bad"
+                ],
+                "userId": "netflix_101112"
+            }
+        },
+        {
+            "type": "REDDIT",
+            "claimedDate": "2025-09-03T10:00:00Z",
+            "witnesses": "witness9,witness10",
+            "walletAddress": "0x1234567890abcdef1234567890abcdef12345678",
+            "AccountUsername": "reddit_user202",
+            "securedSharedData": {
+                "username": "crypto_enthusiast",
+                "pfp": "https://reddit.com/avatars/crypto_enthusiast.png",
+                "userid": "reddit_131415",
+                "bio": "Love discussing cryptocurrency and blockchain technology",
+                "socialLinks": [
+                    "https://twitter.com/crypto_enthusiast",
+                    "https://linkedin.com/in/crypto_enthusiast"
+                ],
+                "karma": {
+                    "postKarma": 1250,
+                    "commentKarma": 3420
+                },
+                "posts": [
+                    {
+                        "title": "The Future of Decentralized Finance",
+                        "id": "post_001"
+                    },
+                    {
+                        "title": "Understanding Smart Contracts",
+                        "id": "post_002"
+                    }
+                ]
+            }
+        }
+    ]
+}

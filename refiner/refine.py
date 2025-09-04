@@ -4,7 +4,7 @@ import os
 
 from refiner.models.offchain_schema import OffChainSchema
 from refiner.models.output import Output
-from refiner.transformer.zomato_transformer import ZomatoTransformer
+from refiner.transformer.multi_provider_transformer import MultiProviderTransformer
 from refiner.config import settings
 from refiner.utils.encrypt import encrypt_file
 from refiner.utils.ipfs import upload_file_to_ipfs, upload_json_to_ipfs
@@ -26,11 +26,11 @@ class Refiner:
                 with open(input_file, 'r') as f:
                     input_data = json.load(f)
 
-                    # Use ZomatoTransformer for all data
+                    # Use MultiProviderTransformer for all data
                     if transformer is None:
-                        transformer = ZomatoTransformer(self.db_path)
+                        transformer = MultiProviderTransformer(self.db_path)
                     transformer.process(input_data)
-                    logging.info(f"Transformed Zomato data from {input_filename}")
+                    logging.info(f"Transformed multi-provider data from {input_filename}")
                     
         if transformer is not None:
             # Create a schema based on the SQLAlchemy schema
